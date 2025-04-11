@@ -18,10 +18,10 @@ public class OperadorasativaId implements Serializable {
     @Serial
     private static final long serialVersionUID = 4492724596969309465L;
 
-    @Column(name = "registro_ans", nullable = false, length = 20)
+    @Column(name = "Registro_ANS", nullable = false, length = 20)
     private String registroAns;
 
-    @Column(name = "cnpj", nullable = false, length = 14)
+    @Column(name = "CNPJ", nullable = false, length = 14)
     private String cnpj;
 
     @Override

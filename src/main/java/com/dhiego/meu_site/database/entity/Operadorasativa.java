@@ -13,70 +13,70 @@ import java.time.LocalDate;
 @Data
 @Builder
 @Entity
-@Table(name = "operadorasativas")
+@Table(name = "OperadorasAtivas", schema = "dados_ans")
 public class Operadorasativa {
     @EmbeddedId
     private OperadorasativaId id;
 
-    @Column(name = "razao_social")
+    @Column(name = "Razao_Social")
     private String razaoSocial;
 
-    @Column(name = "nome_fantasia")
+    @Column(name = "Nome_Fantasia")
     private String nomeFantasia;
 
-    @Column(name = "modalidade", length = 50)
+    @Column(name = "Modalidade", length = 50)
     private String modalidade;
 
-    @Column(name = "logradouro")
+    @Column(name = "Logradouro")
     private String logradouro;
 
-    @Column(name = "numero", length = 20)
+    @Column(name = "Numero", length = 20)
     private String numero;
 
-    @Column(name = "complemento")
+    @Column(name = "Complemento")
     private String complemento;
 
-    @Column(name = "bairro", length = 100)
+    @Column(name = "Bairro", length = 100)
     private String bairro;
 
-    @Column(name = "cidade", length = 100)
+    @Column(name = "Cidade", length = 100)
     private String cidade;
 
-    @Column(name = "uf", length = 2)
+    @Column(name = "UF", length = 2)
     private String uf;
 
-    @Column(name = "cep", length = 8)
+    @Column(name = "CEP", length = 8)
     private String cep;
 
-    @Column(name = "ddd", length = 2)
+    @Column(name = "DDD", length = 2)
     private String ddd;
 
-    @Column(name = "telefone", length = 30)
+    @Column(name = "Telefone", length = 30)
     private String telefone;
 
-    @Column(name = "fax", length = 30)
+    @Column(name = "Fax", length = 30)
     private String fax;
 
-    @Column(name = "endereco_eletronico", length = 100)
+    @Column(name = "Endereco_Eletronico", length = 100)
     private String enderecoEletronico;
 
-    @Column(name = "representante", length = 100)
+    @Column(name = "Representante", length = 100)
     private String representante;
 
-    @Column(name = "cargo_representante", length = 100)
+    @Column(name = "Cargo_Representante", length = 100)
     private String cargoRepresentante;
 
-    @Column(name = "regiao_de_comercializacao", length = 2)
+    @Column(name = "Regiao_de_Comercializacao", length = 2)
     private String regiaoDeComercializacao;
 
-    @Column(name = "data_registro_ans", nullable = false)
+    @Column(name = "Data_Registro_ANS", nullable = false)
     private LocalDate dataRegistroAns;
 
-    public char[] getCnpj() {
-        return id.getCnpj().toCharArray();
+    public String getCnpj() {
+        return id.getCnpj();
     }
 
-    public char[] getRegistroAns() {
-        return id.getRegistroAns().toCharArray();
+    public String getRegistroAns() {
+        return id.getRegistroAns();
     }
 }
