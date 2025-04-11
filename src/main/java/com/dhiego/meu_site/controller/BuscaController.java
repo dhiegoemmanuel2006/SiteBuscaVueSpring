@@ -1,7 +1,6 @@
 package com.dhiego.meu_site.controller;
 
 import com.dhiego.meu_site.dto.OperadorasAtivasDTO;
-import com.dhiego.meu_site.handler.exceptions.InvalidSearchTermException;
 import com.dhiego.meu_site.services.OperadorasativaService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -13,7 +12,7 @@ import java.util.List;
 public class BuscaController {
     private final OperadorasativaService oaService;
 
-    @GetMapping("/busca")
+    @PostMapping("/busca")
     public ResponseEntity<?> buscar(@RequestBody String termo){
         List<OperadorasAtivasDTO> resultados = oaService.buscarOperadoras(termo);
         if (resultados.isEmpty()) {
