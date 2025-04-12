@@ -23,3 +23,9 @@ export default{
 }
 
 </script>
+
+<style scoped>
+  main{
+    height: 90vh;
+  }
+</style>

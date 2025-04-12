@@ -86,4 +86,8 @@ export default {
   .erro{
     color: red;
   }
+
+  template{
+    height: 80vh;
+  }
   </style>

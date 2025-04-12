@@ -19,33 +19,34 @@
 </script>
 
 <style scoped>
-header{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    background-color: black;
-}
-
-.header-content{
-    display: flex;
-    gap: 24px;
+*{
+  padding: 0;
+  margin: 0;
 }
 
 
-.buttons-header {
-  padding: 12px 24px;
-  background-color: #8A9A5B;
+header {
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+  background-color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+header button {
+  background-color: green;
   color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
   border: none;
-  border-radius: 4px;
-  font-weight: 500;
+  border-radius: 5px;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
-
-.buttons-header:hover {
-  background-color: #76804F;
+header button:hover {
+  background-color: #006400;
 }
 </style>
