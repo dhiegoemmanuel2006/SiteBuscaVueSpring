@@ -5,14 +5,14 @@
             <button @click="$router.push('/busca')" class="buttons-header">Busca</button>
         </div>
     </header>
-     
+
 </template>
 
 <script>
 
     export default{
 
-        name: "Header"
+        name: "HeaderComponent",
 
     }
 
@@ -35,7 +35,7 @@ header{
 
 
 .buttons-header {
-  padding: 12px 24px; 
+  padding: 12px 24px;
   background-color: #8A9A5B;
   color: white;
   border: none;
@@ -46,6 +46,6 @@ header{
 }
 
 .buttons-header:hover {
-  background-color: #76804F; 
+  background-color: #76804F;
 }
 </style>
