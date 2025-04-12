@@ -9,6 +9,7 @@ import java.util.List;
 
 @RequiredArgsConstructor
 @RestController
+@CrossOrigin
 public class BuscaController {
     private final OperadorasativaService oaService;
 
