@@ -18,7 +18,6 @@ import java.util.List;
 public class BuscaController {
     private final OperadorasativaService oaService;
 
-
     @Operation(
             summary = "Obter 10 usuário pelo Nome ou Razão social",
             description = "Retorna 10 Operadoras Ativas com base nos dados da ANS",
@@ -31,6 +30,7 @@ public class BuscaController {
     @PostMapping("/busca")
     public ResponseEntity<List<OperadorasAtivasDTO>> buscar(@Parameter(description = "O termo que fará a busca", required = true, example = "unimed") @RequestBody String termo){
         List<OperadorasAtivasDTO> resultados = oaService.buscarOperadoras(termo);
+
         if (resultados.isEmpty()) {
             return ResponseEntity.noContent().build();
         }
