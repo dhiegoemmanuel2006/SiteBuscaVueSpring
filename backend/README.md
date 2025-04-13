@@ -12,3 +12,6 @@ Este projeto utiliza **Spring Boot 3.4.4** para fornecer endpoints que retornam 
 - **Spring Doc OpenAPI** (Documentação da API)
 - **Postman** (Testes de requisições)
 
+## Imagens do swagger
+<img src="docs/imgs/swagger1.png" alt="swagger imagem">
+<img src="docs/imgs/swagger2.png" alt="swagger imagem">
