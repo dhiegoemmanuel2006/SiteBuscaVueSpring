@@ -1,4 +1,4 @@
-# ANS Operadoras API
+# Operadoras Ativas ANS - Backend
 
 API de consulta de operadoras ativas registradas na Agência Nacional de Saúde Suplementar (ANS).  
 Este projeto utiliza **Spring Boot 3.4.4** para fornecer endpoints que retornam dados de operadoras de planos de saúde.
