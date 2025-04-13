@@ -13,12 +13,6 @@ public class OpenApiConfig {
                 .info(new Info()
                         .title("API do meu site de busca")
                         .version("1.0")
-                        .description("Documentação da API Java Spring Boot")
-                        .contact(new io.swagger.v3.oas.models.info.Contact()
-                                .name("Suporte")
-                                .email("suporte@exemplo.com"))
-                        .license(new io.swagger.v3.oas.models.info.License()
-                                .name("Apache 2.0")
-                                .url("https://www.apache.org/licenses/LICENSE-2.0.html")));
+                        .description("Documentação da API Java Spring Boot"));
     }
 }
