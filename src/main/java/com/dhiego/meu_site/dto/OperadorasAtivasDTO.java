@@ -4,9 +4,8 @@ import com.dhiego.meu_site.database.entity.Operadorasativa;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 
+@Schema(description = "Operadoras Ativas DTO")
 @AllArgsConstructor
 @Data
 public class OperadorasAtivasDTO {
