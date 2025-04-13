@@ -21,9 +21,6 @@ public class OperadorasativaService {
         if (!StringUtils.hasText(termo)) {
             return Collections.emptyList();
         }
-        if ("error".equalsIgnoreCase(termo)) {
-            throw new DataAccessException("Simulated DB error") {};
-        }
         try {
             List<Operadorasativa> resultados = buscaAtivas(termo);
             List<OperadorasAtivasDTO> response = new ArrayList<>();
